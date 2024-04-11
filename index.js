@@ -65,8 +65,7 @@ function runSolutions(sourceCount) {
       }
       require("./solution/async-sorted-merge")(
         asyncLogSources,
-        new Printer(),
-        new Heap((a, b) => a.log.date - b.log.date)
+        new Printer()
       )
         .then(resolve)
         .catch(reject);
@@ -75,4 +74,4 @@ function runSolutions(sourceCount) {
 }
 
 // Adjust this input to see how your solutions perform under various loads.
-runSolutions(500);
+runSolutions(600);
